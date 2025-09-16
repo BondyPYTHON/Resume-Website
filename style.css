@@ -1,0 +1,152 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.profile-header {
+    background: linear-gradient(135deg, #1f2937, #374151);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 15px;
+    transition: transform 0.2s;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.1);
+    color: #a4c6fa;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.section-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #1f2937;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.job-entry, .edu-entry {
+    margin-bottom: 25px;
+}
+
+.job-entry h3, .edu-entry h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #374151;
+}
+
+.job-date {
+    display: block;
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+li::before {
+    content: "•";
+    color: #1f2937;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.edu-details {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Responsive Grid for larger screens */
+@media (min-width: 768px) {
+    .resume-container {
+        grid-template-columns: 1fr 2fr;
+    }
+    .summary, .experience, .education {
+        grid-column: 2 / 3;
+    }
+    .other-info {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+    .summary {
+        grid-row: 1 / 2;
+    }
+    .experience {
+        grid-row: 2 / 3;
+    }
+    .education {
+        grid-row: 3 / 4;
+    }
+}
